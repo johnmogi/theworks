@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workcats",
+  "info": {
+    "name": "workcats"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "category": {
+      "type": "string"
+    },
+    "works": {
+      "collection": "works",
+      "via": "workcats",
+      "dominant": true
+    }
+  }
+}
